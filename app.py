@@ -21,9 +21,9 @@ def fun2():
     region = float(request.form['region'])
     mymodel = pickle.load(open('health_model.pkl', "rb"))
     premium = round(mymodel.predict([[age, sex, bmi, children, smoker, region]])[0],2)
-    return "<h1> Hi <br/> your predicted Premium is {} </h1>".format(premium)
+    #return "<h1> Hi <br/> your predicted Premium is {} </h1>".format(premium)
 
-    #return render_template("second.html",  premium=premium)
+    return render_template("second.html",  premium=premium)
 
 if __name__=="__main__":
     #app.run(debug=True)
