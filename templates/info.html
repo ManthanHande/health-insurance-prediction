@@ -1,0 +1,51 @@
+
+<html>
+<head>
+    <title>health Insurance Prediction </title>
+</head>
+<body>
+    <h1>Health Insurance Prediction</h1>
+    <form action="/predict" method="post">
+
+	<label for="cust_age">Age:</label><br>
+        <input type="text" name="age" placeholder="Enter Age" required><br></br>
+
+	<label for="cust_Sex">Sex:</label><br>
+        <select id="cust_Sex" name="sex">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select><br><br>
+
+	<label for="cust_BMI">BMI:</label><br>
+        <input type="text" name="bmi" placeholder="Enter BMI" required><br><br>
+
+    
+	<label for="Children">Children:</label><br>
+        <input type="text" name="children" placeholder="Enter count of children" required><br><br>	
+
+    <label for="cust_Smoker">Smoker:</label><br>
+	    <select id="cust_Smoker" name="smoker">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br><br>
+
+    
+	<label for="region">Region:</label><br>
+	    <select id="region" name="region">
+            <option value="1">northeast</option>
+            <option value="2">northwest</option>
+	        <option value="3">southeast</option>
+            <option value="4">southwest</option>
+        </select><br><br>
+
+
+        <input type="submit" value="predict">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
